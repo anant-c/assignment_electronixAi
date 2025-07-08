@@ -1,0 +1,8 @@
+fastapi
+uvicorn[standard]
+torch
+transformers
+python-multipart # For form data
+datasets # For fine-tuning
+accelerate # For fine-tuning
+scikit-learn # For metrics
