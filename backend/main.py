@@ -4,7 +4,7 @@ from pydantic import BaseModel
 from transformers import pipeline, AutoTokenizer, AutoModelForSequenceClassification
 from fastapi.middleware.cors import CORSMiddleware
 
-MODEL_DIR = "./model"
+MODEL_DIR = "./model/"
 BASE_MODEL = "distilbert-base-uncased-finetuned-sst-2-english"
 
 class PredictRequest(BaseModel):
