@@ -1,0 +1,6 @@
+electronixEnv/
+
+__pycache__/
+
+# Build artifacts
+results/
