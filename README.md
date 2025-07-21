@@ -1,4 +1,4 @@
-# Electronix AI - Sentiment Analysis Microservice
+# Sentiment Analysis Microservice
 
 This project is an end-to-end, containerized microservice for binary sentiment analysis. It consists of a Python backend that serves a Hugging Face Transformer model, a standalone script for fine-tuning, and a minimal React frontend to display the results.
 
