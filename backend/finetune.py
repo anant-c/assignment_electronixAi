@@ -47,7 +47,6 @@ def main():
 
     tokenized_datasets = dataset.map(tokenize_function, batched=True)
 
-    # Set up training arguments
     training_args = TrainingArguments(
         output_dir="./results",
         learning_rate=args.lr,
@@ -57,7 +56,6 @@ def main():
         logging_steps=10,
     )
 
-    # Initialize Trainer
     trainer = Trainer(
         model=model,
         args=training_args,

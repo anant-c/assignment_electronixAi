@@ -15,9 +15,7 @@ function App() {
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState('');
 
-  // The frontend calls the backend and displays the prediction 
   const handlePredict = async () => {
-    // Simple validation
     if (!text.trim()) {
       setError('Please enter some text.');
       return;
@@ -28,9 +26,7 @@ function App() {
     setPrediction(null);
 
     try {
-      // The backend service will be available at http://localhost:8000
       const response = await axios.post('http://localhost:8000/predict', { text });
-      // Display of returned label & score [cite: 28]
       setPrediction(response.data);
     } catch (err) {
       setError('Failed to get prediction. Is the backend running?');
